@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 30px;
+}
+
+.page-container {
+    width: 900px;
+    margin: 0 auto;
+    border: 2px solid #5b9bd5;
+    padding: 25px;
+    min-height: 600px;
+    background-color: #ffffff;
+}
+
+.variant-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: 2px solid #000000;
+}
+
+.variant-table td {
+    border: 1.5px solid #000000;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: 500;
+    height: 38px;
+    padding: 5px;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.row-1 td {
+    background-color: #018f8f;
+    color: #ffffff;
+}
+
+.row-2 td {
+    background-color: #f5f501;
+    color: #111111;
+}
+
+.row-bottom td {
+    background-color: #ffffff;
+    height: 45px;
+}
+
+.row-1:hover td {
+    background-color: #f5f501 !important;
+    color: #111111 !important;
+}
+
+.row-2:hover td {
+    background-color: #018f8f !important;
+    color: #ffffff !important;
+}
+
+
+.figures-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 120px;
+    margin-top: 40px;
+    padding-left: 100px;
+}
+
+.red {
+    background-color: #e50914;
+}
+
+.yellow {
+    background-color: #fbed00;
+}
+
+.green {
+    background-color: #009d43;
+}
+.traffic-light-pos {
+    position: relative;
+    width: 110px;
+    height: 270px;
+    background-color: #d1d5db;
+    border: 4px solid #000000;
+    border-radius: 35px;
+}
+
+.light-pos {
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    border: 3px solid #000000;
+    left: 18px; 
+}
+
+.light-pos.red {
+    top: 18px;
+}
+
+.light-pos.yellow {
+    top: 98px;
+}
+
+.light-pos.green {
+    top: 178px;
+}
+
+.traffic-light-trans {
+    width: 110px;
+    height: 270px;
+    background-color: #d1d5db;
+    border: 4px solid #000000;
+    border-radius: 35px;
+}
+
+.light-trans {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    border: 3px solid #000000;
+    margin: 0 auto; 
+}
+
+.light-trans.red {
+    transform: translateY(18px);
+}
+
+.light-trans.yellow {
+    transform: translateY(32px);
+}
+
+.light-trans.green {
+    transform: translateY(46px);
+}
